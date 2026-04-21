@@ -30,6 +30,7 @@ buttons.forEach(function (button) {
 
 ## project link 2
 [Click here](https://stackblitz.com/edit/dom-project-chaiaurcode-brjnvbne?file=2-BMICalculator%2Fchaiaurcode.js)
+
 ```javascript
 const form=document.querySelector('form')
 
@@ -57,4 +58,16 @@ form.addEventListener('submit',function(e){
   }
 })
 
+```
+
+## project link 3
+[Click here](https://stackblitz.com/edit/dom-project-chaiaurcode-alq3uefa?file=3-DigitalClock%2Fchaiaurcode.js)
+
+```javascript
+const clock=document.getElementById('clock')
+setInterval(function(){
+  let date=new Date();
+  //console.log(date.toLocaleTimeString());
+  clock.innerHTML=date.toLocaleTimeString();
+},1000);
 ```
