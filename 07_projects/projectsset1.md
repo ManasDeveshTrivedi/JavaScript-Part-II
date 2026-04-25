@@ -167,3 +167,27 @@ function newGame(){
   })
 }
 ```
+## project link 5
+[Click here](https://stackblitz.com/edit/dom-project-chaiaurcode-kulg6mwz?file=5-keyboard%2Fchaiaurcode.js)
+
+```javascript
+const insert=document.getElementById('insert')
+window.addEventListener('keydown',(e)=>{
+  insert.innerHTML=`
+  <div class='color'>
+  <table>
+  <tr>
+    <th>Key</th>
+    <th>Key Code</th>
+    <th>Code</th>
+  </tr>
+  <tr>
+    <td>${e.key === " "? "Space":e.key}</td>
+    <td>${e.keyCode}</td>
+    <td>${e.code}</td>
+  </tr>
+</table>
+  </div>
+  `
+})
+```
